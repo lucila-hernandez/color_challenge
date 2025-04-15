@@ -4,6 +4,7 @@ import './index.css'
 import { RedSquare, BlueSquare, OrangeSquare } from './Square.jsx'
 import HexColor from './Hexcolor.jsx'
 import CorrectMessage from './Correctmessage.jsx'
+import ResetButton from './Resetbutton.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <OrangeSquare />
     <BlueSquare />
     <CorrectMessage/>
+    <ResetButton />
   </StrictMode>,
 )
