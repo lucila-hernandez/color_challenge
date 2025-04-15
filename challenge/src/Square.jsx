@@ -4,7 +4,8 @@ function RedSquare() {
             width: '100px',
             height: '100px',
             borderColor: 'red',
-            backgroundColor: 'red'
+            backgroundColor: 'red',
+            display: 'inline-block',
         }} />
     )
 }
@@ -15,7 +16,8 @@ function OrgangeSquare() {
             width: '100px',
             height: '100px',
             borderColor: 'orange',
-            backgroundColor: 'orange'
+            backgroundColor: 'orange',
+            display: 'inline-block',
         }} />
     )
 }
@@ -26,7 +28,8 @@ function BlueSquare() {
             width: '100px',
             height: '100px',
             borderColor: 'blue',
-            backgroundColor: 'blue'
+            backgroundColor: 'blue',
+            display: 'inline-block',
         }} />
     )
 }
