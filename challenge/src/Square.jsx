@@ -1,43 +1,22 @@
-function RedSquare() {
-    return(
-        <div style = {{
-            width: '100px',
-            height: '100px',
-            borderColor: 'red',
-            backgroundColor: 'red',
-            border: '2px solid black',
-            display: 'inline-block',
-            marginRight: '10px'
-        }} />
-    )
+import React, { useState } from 'react';
+import generateRandomHexColor from './Randomcolor';
+
+function Square() {
+  const [colors] = useState([
+    generateRandomHexColor(),  
+    generateRandomHexColor(),
+    generateRandomHexColor(),
+  ]);
+
+  console.log(colors);
+
+  return (
+    <div className="square-container">
+      <div className="square" style={{ backgroundColor: colors[0] }}></div>
+      <div className="square" style={{ backgroundColor: colors[1] }}></div>
+      <div className="square" style={{ backgroundColor: colors[2] }}></div>
+    </div>
+  );
 }
 
-function OrangeSquare() {
-    return(
-        <div style = {{
-            width: '100px',
-            height: '100px',
-            borderColor: 'orange',
-            backgroundColor: 'orange',
-            border: '2px solid black',
-            display: 'inline-block',
-            marginRight: '10px'
-        }} />
-    )
-}
-
-function BlueSquare() {
-    return(
-        <div style = {{
-            width: '100px',
-            height: '100px',
-            borderColor: 'blue',
-            backgroundColor: 'blue',
-            border: '2px solid black',
-            display: 'inline-block',
-            marginRight: '10px'
-        }} />
-    )
-}
-
-export { RedSquare, OrangeSquare, BlueSquare };
+export default Square;
