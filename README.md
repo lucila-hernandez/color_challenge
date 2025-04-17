@@ -1,0 +1,3 @@
+### 🤖 AI Reflection
+
+AI helped me troubleshoot issues, review code, and improve my component structure especially when refactoring Square.jsx and generating random colors. It guided me through syntax questions and reminded me of setup steps like running the app from the right folder. On my own, I figured out how to break my code into reusable components, import them into App.jsx, and reorganize my project layout.
